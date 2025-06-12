@@ -1,48 +1,92 @@
-/* Make images flexible */
+/* General styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f5d0e8;
+}
+
+/* Make all images flexible */
 img {
   max-width: 100%;
   height: auto;
 }
 
-/* Use padding and flexible layout */
-body {
-  margin: 0;
+/* Responsive nav links */
+nav ul {
+  list-style: none;
   padding: 0;
-  font-family: Arial, sans-serif;
-  background-color: #fff8f0;
-  text-align: center;
+  margin: 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
 }
 
-/* Responsive header and footer */
-header, footer {
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #fff;
+  background-color: #d46aa5;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+/* Responsive section padding */
+section {
+  padding: 1rem;
+}
+
+/* Responsive typography */
+h1, h2, h3, p {
+  margin: 10px;
+  padding: 0 10px;
+}
+
+/* WhatsApp buttons */
+a[href*="wa.me"] {
+  display: inline-block;
+  background-color: #25d366;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px auto;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* Footer styling */
+footer {
+  background-color: #f29dae;
   padding: 1rem;
   color: white;
 }
 
-header {
-  background-color: #f4a261;
-}
-
-footer {
-  background-color: #264653;
-  position: relative; /* Remove fixed footer on small screens */
-  width: 100%;
-}
-
-/* Ensure text fits nicely */
-p {
-  margin: 1rem;
-  padding: 0 1rem;
-  font-size: 1.1rem;
-}
-
-/* Optional: Add media query for phones */
+/* 📱 Media query for small screens */
 @media (max-width: 600px) {
-  header h1 {
+  h1 {
     font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
   }
 
   p {
     font-size: 1rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 8px;
   }
 }
