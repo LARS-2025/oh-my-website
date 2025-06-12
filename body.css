@@ -1,0 +1,93 @@
+
+/* General styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f5d0e8;
+}
+
+/* Make all images flexible */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive nav links */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #fff;
+  background-color: #d46aa5;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+/* Responsive section padding */
+section {
+  padding: 1rem;
+}
+
+/* Typography */
+h1, h2, h3, p {
+  margin: 10px;
+  padding: 0 10px;
+}
+
+/* WhatsApp buttons */
+a[href*="wa.me"] {
+  display: inline-block;
+  background-color: #25d366;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px auto;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* Footer styling */
+footer {
+  background-color: #f29dae;
+  padding: 1rem;
+  color: white;
+}
+
+/* 📱 Media query for small screens */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
